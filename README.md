@@ -1,7 +1,7 @@
 This progect, creates a csv file that has numbers and repeates to create a dataset with your given middle. Then plot that use matplotlib.
 
 First do:
-python3 -m pip -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 usage: randplot.py [-h] -s SIZE -min MIN -max MAX -m MIDDLE -step PLOT_STEP [-rfp RANDOMS_FILE_PATH]
 
