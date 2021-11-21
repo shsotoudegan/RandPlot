@@ -21,6 +21,7 @@ def calculateWeights(numbers, middle):
 
 def createRandoms(size, min_num, max_num, middle, randoms_file_path):
     numbers = tuple(range(min_num, max_num))
+
     weights = calculateWeights(numbers, middle)
     data = tuple(choices(population=numbers, weights=weights, k=size))
     dataset = tuple(set(data))
@@ -54,7 +55,7 @@ def main():
                         help="Maximum number of rabdoms")
     parser.add_argument("-m", "--middle", required=True,
                         help="Middle of randoms")
-    parser.add_argument("-step", "--plot-step", required=True,
+    parser.add_argument("-step", "--plot-step", required=False,
                         help="Steps of plot.")
     parser.add_argument("-rfp", "--randoms-file-path", required=False,
                         help="Randoms csv file path. path from current directory.")
